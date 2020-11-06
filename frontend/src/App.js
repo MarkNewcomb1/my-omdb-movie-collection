@@ -9,6 +9,11 @@ const App = () => {
   //   setColor('cornflowerblue');
   // }
   const [movieData, setMovieData] = useState(staticData)
+  const calcuateAverageAge = () => {
+    return Math.floor(movieData.reduce((acc, curr) => {
+      return acc + parseInt(curr.Year)
+    }, 0) / movieData.length);
+  }
   return (
     <div className="App">
       {/* <div className="classToChange" 
@@ -17,8 +22,9 @@ const App = () => {
       <button onClick={() => changeColor()}>CLICK TO CHANGE COLOR</button> */}
       {/* <p>{JSON.stringify(staticData)}</p> */}
       <h2>My Movie Collection</h2>
+    <h3>Average age of movie: {calcuateAverageAge()}</h3>
 <div className="movie-collection">
-      { staticData.map(movie => (
+      { movieData.map(movie => (
         <MovieCard 
         title={movie.Title}
         year={movie.Year}
