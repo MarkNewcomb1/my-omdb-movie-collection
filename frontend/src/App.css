@@ -1,0 +1,30 @@
+html {
+  background-color: #1d1f21;
+}
+
+.App {
+  margin: 2rem;
+}
+
+h2 {
+  text-align: center;
+  color: whitesmoke;
+}
+.movie-collection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  flex: 0 1 220px;
+  padding: 0 5px;
+}
+
+.movie-card p {
+  color: whitesmoke;
+  margin-top: 0;
+}
+
+.movie-card img {
+  max-width: 100%;;
+}
