@@ -4,11 +4,11 @@ html {
 
 .App {
   margin: 2rem;
+  color: whitesmoke;
 }
 
 h2 {
   text-align: center;
-  color: whitesmoke;
 }
 .movie-collection {
   display: flex;
@@ -17,12 +17,12 @@ h2 {
 
 .movie-card {
   flex: 0 1 220px;
-  padding: 0 5px;
+  padding: 0 5px 30px;
 }
 
 .movie-card p {
-  color: whitesmoke;
   margin-top: 0;
+  font-size: .9rem;
 }
 
 .movie-card img {
