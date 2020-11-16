@@ -28,3 +28,11 @@ h2 {
 .movie-card img {
   max-width: 100%;;
 }
+
+.search-bar {
+  margin: 25px 0px;
+}
+
+.search-bar, input[type="text"] {
+  font-size: 1.2rem;
+} 
